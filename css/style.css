@@ -1,0 +1,48 @@
+/* Reset Default */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Design System */
+
+:root {
+    --bg-color: #0A3B4C;
+}
+
+/* Common */
+
+body {
+    background-color: var(--bg-color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-size: 62px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.container {
+    width: 60%;
+    margin: 40px auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+li {
+    width: 73px;
+    height: 73px;
+    text-align: center;
+    background-color: #258AB2;
+    line-height: 73px;
+}

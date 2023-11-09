@@ -10,19 +10,16 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 'use strict'
 
+let groupElement = document.getElementById('container');
+
 for (let i = 1; i <= 100; i++) {
 
-    if (i % 3 === 0) {
-
-        if (i % 5 === 0) {
-            console.log('FizzBuzz')
-        } else {
-            console.log('Fizz')
-        }
-
-    } else if (i % 5 === 0) {
-        console.log('Buzz')
-
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log('fizzbuzz');
+    } else if (i % 2 === 0) {
+        console.log('fizz')
+    } else if (i & 5 === 0) {
+        console.log('buzz')
     } else {
         console.log(i)
     }
