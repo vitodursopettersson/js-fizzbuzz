@@ -26,7 +26,7 @@ for (let i = 1; i <= 100; i++) {
         listElement.append('fizz');
         listElement.classList.add('fizz')
 
-    } else if (i & 5 === 0) {
+    } else if (i % 5 === 0) {
         console.log('buzz');
         listElement.append('buzz');
         listElement.classList.add('buzz')
