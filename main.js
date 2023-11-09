@@ -10,17 +10,33 @@ Proviamo ad immaginare le operazioni che vogliamo far svolgere al nostro program
 
 'use strict'
 
-let groupElement = document.getElementById('container');
+const groupElement = document.querySelector('.group-element')
+console.log(groupElement)
 
 for (let i = 1; i <= 100; i++) {
 
+    const listElement = document.createElement('li')
+
     if (i % 3 === 0 && i % 5 === 0) {
         console.log('fizzbuzz');
-    } else if (i % 2 === 0) {
-        console.log('fizz')
+        listElement.append('fizzbuzz');
+        listElement.classList.add('fizzbuzz')
+    } else if (i % 3 === 0) {
+        console.log('fizz');
+        listElement.append('fizz');
+        listElement.classList.add('fizz')
+
     } else if (i & 5 === 0) {
-        console.log('buzz')
+        console.log('buzz');
+        listElement.append('buzz');
+        listElement.classList.add('buzz')
+
     } else {
-        console.log(i)
+        console.log(i);
+        listElement.append(i);
     }
+
+    groupElement.append(listElement)
 }
+
+groupElement

@@ -46,3 +46,15 @@ li {
     background-color: #258AB2;
     line-height: 73px;
 }
+
+.fizz {
+    background-color: #27D6A2;
+}
+
+.buzz {
+    background-color: #FBD166;
+}
+
+.fizzbuzz {
+    background-color: #F1466F;
+}
